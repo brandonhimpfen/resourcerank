@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "ResourceRank"
+message: "If you use ResourceRank, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: "Himpfen"
+    given-names: "Brandon"
+repository-code: "https://github.com/brandonhimpfen/resourcerank"
+url: "https://github.com/brandonhimpfen/resourcerank"
+abstract: >
+  ResourceRank is a structured resource evaluation and review framework
+  designed for curated ecosystems, knowledge infrastructure, awesome lists,
+  datasets, directories, and related resource collections.
+keywords:
+  - ai
+  - curation
+  - resource evaluation
+  - awesome lists
+  - knowledge infrastructure
+  - github
+  - review systems
+license: "MIT"
+version: "1.0.0"
+date-released: "2026-05-17"

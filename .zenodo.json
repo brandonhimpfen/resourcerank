@@ -1,0 +1,22 @@
+{
+  "title": "ResourceRank",
+  "creators": [
+    {
+      "name": "Himpfen, Brandon"
+    }
+  ],
+  "description": "ResourceRank is a structured resource evaluation and review framework designed for curated ecosystems, knowledge infrastructure, awesome lists, datasets, directories, and related resource collections.",
+  "license": "MIT",
+  "upload_type": "software",
+  "keywords": [
+    "AI",
+    "curation",
+    "resource evaluation",
+    "awesome lists",
+    "knowledge infrastructure",
+    "GitHub",
+    "review systems"
+  ],
+  "version": "1.0.0",
+  "access_right": "open"
+}
