@@ -1,5 +1,8 @@
 # ResourceRank
 
+[![Support Open Work](https://img.shields.io/badge/Support-Open%20Work-0A0A0A?style=flat&logo=github)](https://github.com/brandonhimpfen/support) 
+[![DOI](https://zenodo.org/badge/1241152105.svg)](https://doi.org/10.5281/zenodo.20260625)
+
 ResourceRank is a structured review tool for evaluating whether a submitted resource belongs in a curated collection.
 
 It is designed for maintainers of Awesome Lists, resource directories, dataset catalogs, newsletters, knowledge bases, learning libraries, and other curated ecosystems.
