@@ -1,0 +1,23 @@
+{
+  "name": "dataset-catalog",
+  "description": "Review profile for datasets submitted to a catalog or open data directory.",
+  "weights": {
+    "relevance": 25,
+    "documentation": 25,
+    "maintenance": 15,
+    "trust": 10,
+    "openness": 20,
+    "neutrality": 5
+  },
+  "thresholds": {
+    "accept": 80,
+    "review": 56
+  },
+  "rules": {
+    "minimum_readme_words_for_full_docs": 700,
+    "recent_commit_days": 365,
+    "stale_commit_days": 1095,
+    "low_star_threshold": 10,
+    "strong_star_threshold": 250
+  }
+}

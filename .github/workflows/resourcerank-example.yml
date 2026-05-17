@@ -1,0 +1,45 @@
+name: ResourceRank Example
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "reviews/input/**/*.json"
+      - "profiles/**/*.json"
+      - "resourcerank/**/*.py"
+
+jobs:
+  evaluate-resources:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ResourceRank
+        run: python -m pip install -e .
+
+      - name: Evaluate submitted resources
+        shell: bash
+        run: |
+          mkdir -p reviews/output
+          shopt -s nullglob
+          for file in reviews/input/*.json; do
+            name=$(basename "$file" .json)
+            resourcerank evaluate \
+              --input "$file" \
+              --profile profiles/awesome-list.json \
+              --output "reviews/output/${name}.review.json"
+          done
+
+      - name: Upload review outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: resourcerank-reviews
+          path: reviews/output/*.json
+          if-no-files-found: ignore

@@ -1,0 +1,16 @@
+{
+  "name": "newsletter-source",
+  "description": "Review profile for sources considered for curated newsletters and briefings.",
+  "weights": {
+    "relevance": 35,
+    "documentation": 5,
+    "maintenance": 10,
+    "trust": 25,
+    "openness": 5,
+    "neutrality": 20
+  },
+  "thresholds": {
+    "accept": 78,
+    "review": 55
+  }
+}

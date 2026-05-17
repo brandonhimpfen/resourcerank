@@ -1,0 +1,23 @@
+{
+  "name": "awesome-list",
+  "description": "Review profile for Awesome Lists and curated open resource collections.",
+  "weights": {
+    "relevance": 35,
+    "documentation": 20,
+    "maintenance": 15,
+    "trust": 10,
+    "openness": 15,
+    "neutrality": 5
+  },
+  "thresholds": {
+    "accept": 82,
+    "review": 58
+  },
+  "rules": {
+    "minimum_readme_words_for_full_docs": 450,
+    "recent_commit_days": 180,
+    "stale_commit_days": 730,
+    "low_star_threshold": 25,
+    "strong_star_threshold": 500
+  }
+}
